@@ -5,7 +5,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.FilterType;
 
-@Configuration
+@Configuration("config")
 /* 설명. 1. 기본적으로 설정파일이 있는 패키지 및 하위만 scan 하지만 basePackage를 바꾸면 다른 범위도 가능 하다. */
 //@ComponentScan(basePackages = {"com.ohgiraffers", "com.ohgiraffers.section01"})
 
