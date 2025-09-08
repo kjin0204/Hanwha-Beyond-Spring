@@ -10,11 +10,26 @@ import java.util.List;
 @Service
 public class BookService {
 
-    /* 설명.
-     *  필드에 @Autowired를 추가하면 필드를 통한 의존성 객체 주입(bean주입)으로 필드 주입이라고 한다.
-    * */
-    @Autowired
+
+    /* 설명. 1. 필드 주입방식 */
+//    @Autowired
+//    private BookDAO bookDAO;
+
+    /* 설명. 2. setter 주입 방식 */
+//    private BookDAO bookDAO;
+//
+//    @Autowired
+//    public void setBookDAO(BookDAO bookDAO) {
+//        this.bookDAO = bookDAO;
+//    }
+
+    /* 설명. 3. 생성자 주입 방식 */
     private BookDAO bookDAO;
+
+    @Autowired
+    public BookService(BookDAO bookDAO) {
+        this.bookDAO = bookDAO;
+    }
 
     public List<BookDTO> findAllBook() {
         return bookDAO.findAllBook();

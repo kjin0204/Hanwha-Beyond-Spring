@@ -9,6 +9,7 @@ import lombok.*;
 //@ToString
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 public class MemberDTO {
     private int sequence;
     private String id;

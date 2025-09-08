@@ -2,7 +2,6 @@ package com.ohgiraffers.section02.annotation.subsection04.resource;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
 import java.util.Arrays;
 
 public class Application {
@@ -16,6 +15,5 @@ public class Application {
                 (PokemonService) context.getBean("pokemonServiceResource", PokemonService.class);
 
         pokemonService.pokemonAttack();
-
     }
 }

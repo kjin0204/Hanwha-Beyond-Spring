@@ -5,8 +5,6 @@ import jakarta.inject.Inject;
 import jakarta.inject.Named;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-
 @Service("pokemonServiceInject")
 public class PokemonService {
 
